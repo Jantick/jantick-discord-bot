@@ -16,8 +16,8 @@
 ### Current version: 1.0.1
 
 #### Version 1.0.1
-- Inital release, added base commands such as moderation. 
+- Initial release, added base commands such as moderation.
 - Documentaion for the bot was released attached to the repo in the src/docs path.
 - MongoDB file deletion commands have been added.
 - Current dev team working on the bot was increased by 3 people
-- Added role commands inclduing: Role Indo, Give Role , Remove Role
+- The added role commands including Role Indo, Give Role, Remove RoleRole
