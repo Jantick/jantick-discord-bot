@@ -11,7 +11,7 @@ module.exports = class RoleInfoCommand extends BaseCommand {
 
   run(message, args) {
 
-    const role = message.guild.roles.cache.get(args[0]);
+    const role = message.mentions.roles.first();
     if (!role)
       return message.channel.send('Please mention a role or provide a valid role ID');
 
