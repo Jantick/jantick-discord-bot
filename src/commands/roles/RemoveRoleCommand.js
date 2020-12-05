@@ -12,11 +12,11 @@ module.exports = class RemoveRoleCommand extends BaseCommand {
 
     if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("Command restricted to Server Staff");
 
-    let member = getMemberFromMention(message, args[0]) 
+    let member = message.mentions.members.first();
 
     if (!member) return message.channel.send("I couldn't find that user");
 
-    let role = getRoleFromMention(message, args[1])
+    let role = getRolesFromMention(message, args[1])
 
     if (!role) return message.channel.send("That role doesn't exist, please mention a valid role.");
     if (!member.roles.cache.find(rol => rol.id === role.id)) return message.channel.send("That member doesn't have that role.");
