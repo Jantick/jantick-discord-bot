@@ -6,7 +6,7 @@ async function getMemberFromMention(message, mention) {
   return message.guild.members.cache.get(id);
 }
 
-async function getRolesFromMention(message, identifier) {
+async function getRolesFromMention(message, mention) {
   if (!mention) return;
     const matches = mention.match(/^<@&(\d+)>$/);
     if (!matches) return;

@@ -8,3 +8,6 @@ package-lock.json
 
 # macos ds_store file
 .DS_store
+
+# slappey 
+slappey.json
