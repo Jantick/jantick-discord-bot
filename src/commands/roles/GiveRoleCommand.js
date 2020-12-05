@@ -13,7 +13,6 @@ module.exports = class GiveRoleCommand extends BaseCommand {
     if (!message.member.hasPermission('MANAGE_ROLES')) return message.reply("Command restricted to Server Staff");
 
     let member = message.mentions.members.first();
-    message.channel.send(member)
     if (!member) return message.channel.send("I couldn't find that user");
 
     let role = getRolesFromMention(message, args[1])
