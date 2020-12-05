@@ -1,6 +1,6 @@
 
 <h1 align="center" style="position: relative;">
-    <img width="200" style="border-radius: 50%;" src=".src/assets/images/jantick-logo-black.png"/><br>
+    <img width="200" style="border-radius: 50%;" src="./src/assets/images/jantick-logo-black.png"/><br>
     Jantick Technologies 
 </h1>
 
@@ -41,11 +41,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[Jantick Discord Bot](https://jantick.com)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+The Jantick Discord Bot was designed and developed to help sevrer moderators in our community Discord Server, butnot just for the moderators but for the community to use as a source of information for getting help with code to creating a support ticket in our Discord Server.
 
 
 ### Built With
