@@ -9,9 +9,9 @@ module.exports = class RoleInfoCommand extends BaseCommand {
     super('roleinfo', 'roles', []);
   }
 
-  run(message, args) {
+  run(client, message, args) {
 
-    const role = message.mentions.roles.first();
+    const role = getRolesFromMention(message,args[0]);
     if (!role)
       return message.channel.send('Please mention a role or provide a valid role ID');
 
