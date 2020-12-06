@@ -6,7 +6,8 @@ module.exports = class ClearCommand extends BaseCommand {
   }
 
   async run(client, message) {
-  
+    message.delete()
+
     const args = message.content.split(' ').slice(1); 
     const amount = args.join(' '); 
     

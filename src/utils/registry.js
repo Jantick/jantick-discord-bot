@@ -55,17 +55,17 @@ async function getRolesFromMention(message, mention) {
     return message.guild.roles.cache.get(id);
 }
 
-// function sendErrorMessage(message, reason) {
-//   errorType = "Invalid Argument";
-//   const prefix = "!";
-//   const embed = new MessageEmbed()
-//     .setAuthor(`${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true }))
-//     .setTitle(`Error: \`${this.name}\``)
-//     .setDescription(`\`\`\`diff\n- ${errorType}\n+ ${reason}\`\`\``)
-//     .setTimestamp()
-//     .setColor(message.guild.me.displayHexColor);
-//   message.channel.send(embed);
-// }
+function sendErrorMessage(message, reason) {
+  errorType = "Invalid Argument";
+  const prefix = "!";
+  const embed = new MessageEmbed()
+    .setAuthor(`${message.author.tag}`, message.author.displayAvatarURL({ dynamic: true }))
+    .setTitle(`Error: \`${this.name}\``)
+    .setDescription(`\`\`\`diff\n- ${errorType}\n+ ${reason}\`\`\``)
+    .setTimestamp()
+    .setColor(message.guild.me.displayHexColor);
+  message.channel.send(embed);
+}
 
 module.exports = { 
   registerCommands, 
