@@ -15,9 +15,9 @@ module.exports = class GiveRoleCommand extends BaseCommand {
     let member = message.mentions.members.first();
     if (!member) return message.channel.send("I couldn't find that user");
 
-    let role = getRolesFromMention(message, args[1])
+    let role = message.guild.roles.cache.find(rol => rol.name === args.slice(0).join(" "));
 
-    if (!role) return message.channel.send("That role doesn't exist, please mention a valid role.");
+    if (!role) return message.channel.send("That role doesn't exist, please type a valid role.");
 
     await member.roles.add(role);
 
