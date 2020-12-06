@@ -1,6 +1,6 @@
 
 const { Message, DiscordAPIError } = require('discord.js');
-const BaseEvent = require('../../utils/structures/BaseEvent');
+const BaseEvent = require('../utils/structures/BaseEvent');
 const { MessageEmbed } = require('discord.js')
 
 module.exports = class GuildMemberAddEvent extends BaseEvent {
