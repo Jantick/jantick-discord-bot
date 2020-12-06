@@ -8,16 +8,17 @@ module.exports = class GuildMemberAddEvent extends BaseEvent {
   }
   
   async run(client, member) {
-    guildMember.addRole(ember.guild.roles.find(role => role.name === "member"));
+   
 
     let WelcomeEmbed = new MessageEmbed()
     .setDescription(`${member} *[${member.id}]* has joined the Jantick Technologies Discord.`)
     .setColor('#4BCC85')
 
-    let channel = 
+    let channel = message.guild.channels.cache.get("778870460879994920")
+    let role = message.guild.roles.find(r => r.name === "Member");
     
-    channel.send(WelcomeEmbed)  
-// 778870460879994920
+    channel.send(WelcomeEmbed) 
+    member.roles.add(role)
 
   } 
 }
