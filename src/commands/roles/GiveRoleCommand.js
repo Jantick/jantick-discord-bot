@@ -19,7 +19,7 @@ module.exports = class GiveRoleCommand extends BaseCommand {
 
     if (!role) return message.channel.send("That role doesn't exist, please mention a valid role.");
 
-    await member.roles.add(role.id);
+    await member.roles.add(role);
 
     const addedRoleEmbed = new MessageEmbed()
     .setColor(colours.GreenColour)
