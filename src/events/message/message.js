@@ -2,7 +2,7 @@ const BaseEvent = require('../../utils/structures/BaseEvent');
 
 const blacklist = require('../../scheams/blacklist-shcema')
 
-const maintenance = require('../../schemas/aintenance-schema')
+// const maintenance = require('../../schemas/aintenance-schema')
 module.exports = class MessageEvent extends BaseEvent {
   constructor() {
     super('message');
