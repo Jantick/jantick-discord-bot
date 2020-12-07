@@ -8,6 +8,8 @@ module.exports = class ClearCommand extends BaseCommand {
   async run(client, message) {
     message.delete()
 
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("This command is restriced to Jantick Staff.");
+
     const args = message.content.split(' ').slice(1); 
     const amount = args.join(' '); 
     
