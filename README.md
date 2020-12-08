@@ -106,7 +106,7 @@ To find out more about how contributing to Jantick repos work check out out [CON
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the GNU-GPT License. See `LICENSE` for more information.
 
 
 
