@@ -24,3 +24,5 @@ function duration(ms) {
   message.channel.send(embed)
   }
 }
+
+

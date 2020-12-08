@@ -21,9 +21,9 @@ module.exports = class GuildMemberAddEvent extends BaseEvent {
     .addField('Joined Discord on', `\`${moment(member.user.createdAt).format('MMM DD YYYY')}\``, true)
     .setColor('#4BCC85')
 
-    let channel = message.guild.channels.find(ch => ch.id === '778870460879994920')
+    let Channel = message.guild.channels.find(ch => ch.id === '778870460879994920')
     
-    channel.send(WelcomeEmbed)  
+    Channel.send(WelcomeEmbed)  
 
   } 
 }
